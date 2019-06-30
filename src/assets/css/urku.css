@@ -1978,7 +1978,7 @@ body {
 .rk-menu__item:last-child {
   padding-right: 0;
 }
-.rk-menu__item.active {
+.active {
   color: #a0a0a0;
 }
 .rk-menu__link {
