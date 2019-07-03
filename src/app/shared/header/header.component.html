@@ -13,7 +13,7 @@
       </label>
       <div class="ae-container-fluid rk-topbar">
         <h1 class="rk-logo">
-          <a routerLink="">KcirePunk<sup>tm</sup>
+          <a routerLink="">{{infoPaginaService.info.titulo}}<sup>tm</sup>
           </a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
@@ -24,14 +24,14 @@
               <a routerLink="about" routerLinkActive="active" class="rk-menu__link">About</a>
             </li>
           </ul>
-          <form class="rk-search">
-            <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+          <div class="rk-search">
+            <input (keyup)="buscarProducto(txtBuscar.value)" #txtBuscar type="text" placeholder="Buscar..." id="urku-search" class="rk-search-field">
             <label for="urku-search">
               <svg>
                 <use xlink:href="assets/img/symbols.svg#icon-search"></use>
               </svg>
             </label>
-          </form>
+          </div>
         </nav>
       </div>
     </header> 
